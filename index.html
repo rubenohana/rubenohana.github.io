@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Raphaël Berthier</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Raphaël Berthier</div>
+<div class="menu-item"><a href="index.html" class="current">Home</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Raphaël Berthier</h1>
+</div>
+<table class="imgtable"><tr><td>
+<img src="photo1.jpg" alt="" width="170px" />&nbsp;</td>
+<td align="left"><h2>Briefly</h2>
+<p>I am a second-year Ph.D. student under the supervision of <a href="http://www.di.ens.fr/~fbach/">Francis Bach</a> and <a href="http://pierre.gaillard.me/">Pierre Gaillard</a>. I work in the <a href="https://www.di.ens.fr/sierra/">SIERRA team</a> in Paris, which is a joint team between <a href="https://www.inria.fr/centre/paris">INRIA Paris</a>, <a href="https://www.di.ens.fr/">ENS Paris</a> and <a href="http://www.cnrs.fr/fr/page-daccueil">CNRS</a>.</p>
+<p>My research interests lie mainly within statistics, optimization and probability theory. More precisely, my current work focuses on developing polynomial-based iterative methods to accelerate the sharing of information in decentralized networks, using inspiration coming from numerical analysis. Before that, I worked under the supervision of <a href="https://web.stanford.edu/~montanar/">Andrea Montanari</a> to develop a rigorous analysis of the Approximate Message Passing algorithms in the case of non-separable denoisers.</p>
+<p>Here is a short <a href="cv_english.pdf">CV</a>.</p>
+<h2>Contact</h2>
+<ul>
+<li><p>E-mail: raphael [dot] berthier [at] inria [dot] fr <br />
+In the perspective of making research more self-critical, I welcome any comments, reviews, critiques, or suggestions on my work.</p>
+</li>
+<li><p>Physical address: INRIA Paris, 4th floor, Office C406, <a href="https://www.google.fr/maps?q=2+rue+Simone+Iff,+75012+Paris&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwiHscbX49LbAhUFchQKHRTfDbUQ_AUICigB">2 rue Simone Iff, 75012 Paris</a>.</p>
+</li>
+</ul>
+</td></tr></table>
+<h2>Publications and Preprints</h2>
+<ul>
+<li><p>R. Berthier, F. Bach, P. Gaillard. <b>Tight Nonparametric Convergence Rates for Stochastic Gradient Descent under the Noiseless Linear Model</b>, 2020, preprint. <br />[<a href="https://hal.archives-ouvertes.fr/hal-02866755">hal</a>, <a href="https://arxiv.org/abs/2006.08212">arXiv</a>] <span class="toggle-trigger">[Show Abstract]<span> 
+<div class="toggle-wrap">
+<b>Abstract:</b> In the context of statistical supervised learning, the noiseless linear model assumes that there exists a deterministic linear relation <img class="eq" src="eqs/9200006626087324140-130.png" alt="Y = langle theta_*, X rangle" style="vertical-align: -5px" /> between the random output <img class="eq" src="eqs/11392034264-130.png" alt="Y" style="vertical-align: -0px" /> and the random feature vector <img class="eq" src="eqs/1230657311937148082-130.png" alt="Phi(U)" style="vertical-align: -5px" />, a potentially non-linear transformation of the inputs <img class="eq" src="eqs/10880032724-130.png" alt="U" style="vertical-align: -1px" />. We analyze the convergence of single-pass, fixed step-size stochastic gradient descent on the least-square risk under this model. The convergence of the iterates to the optimum <img class="eq" src="eqs/1854661537855120535-130.png" alt="theta_*" style="vertical-align: -3px" /> and the decay of the generalization error follow polynomial convergence rates with exponents that both depend on the regularities of the optimum <img class="eq" src="eqs/1854661537855120535-130.png" alt="theta_*" style="vertical-align: -3px" /> and of the feature vectors <img class="eq" src="eqs/1230657311937148082-130.png" alt="Phi(U)" style="vertical-align: -5px" />. We interpret our result in the reproducing kernel Hilbert space framework; as a special case, we analyze an online algorithm for estimating a real function on the unit interval from the noiseless observation of its value at randomly sampled points. The convergence depends on the Sobolev smoothness of the function and of a chosen kernel. Finally, we apply our analysis beyond the supervised learning setting to obtain convergence rates for the averaging process (a.k.a. gossip algorithm) on a graph depending on its spectral dimension. 
+</div></p>
+</li>
+</ul>
+<ul>
+<li><p>R. Berthier, F. Bach, P. Gaillard. <b>Accelerated Gossip in Networks of Given Dimension using Jacobi Polynomial Iterations</b>, 2020, <i>SIAM Journal on Mathematics of Data Science (SIMODS)</i>. <br />[<a href="papers/accelerated_gossip_merged.pdf">journal</a>, <a href="https://hal.archives-ouvertes.fr/hal-01797016/">hal</a>, <a href="https://arxiv.org/abs/1805.08531">arXiv</a>] <span class="toggle-trigger">[Show Abstract]<span> 
+<div class="toggle-wrap">
+<b>Abstract:</b> Consider a network of agents connected by communication links, where each agent holds a real value. The gossip problem consists in estimating the average of the values diffused in the network in a distributed manner. We develop a method solving the gossip problem that depends only on the spectral dimension of the network, that is, in the communication network set-up, the dimension of the space in which the agents live. This contrasts with previous work that required the spectral gap of the network as a parameter, or suffered from slow mixing. Our method shows an important improvement over existing algorithms in the non-asymptotic regime, i.e., when the values are far from being fully mixed in the network. Our approach stems from a polynomial-based point of view on gossip algorithms, as well as an approximation of the spectral measure of the graphs with a Jacobi measure. We show the power of the approach with simulations on various graphs, and with performance guarantees on graphs of known spectral dimension, such as grids and random percolation bonds. An extension of this work to distributed Laplacian solvers is discussed. As a side result, we also use the polynomial-based point of view to show the convergence of the message passing algorithm for gossip of Moallemi & Van Roy on regular graphs. The explicit computation of the rate of the convergence shows that message passing has a slow rate of convergence on graphs with small spectral gap. 
+</div></p>
+</li>
+</ul>
+<ul>
+<li><p>R. Berthier, A. Montanari, P.-M. Nguyen. <b>State Evolution for Approximate Message Passing with Non-Separable Functions</b>, 2017, <i>Information and Inference: a Journal of the IMA</i>. <br />[<a href="https://doi.org/10.1093/imaiai/iay021">journal</a>, <a href="https://arxiv.org/abs/1708.03950">arXiv</a>] <span class="toggle-trigger">[Show Abstract]<span> 
+<div class="toggle-wrap">
+<b>Abstract:</b> Given a high-dimensional data matrix <img class="eq" src="eqs/4536482735675098617-130.png" alt="A in {rm I!R}^{n times m}" style="vertical-align: -1px" />, Approximate Message Passing (AMP) algorithms construct sequences of vectors <img class="eq" src="eqs/4353495100622012351-130.png" alt="u^t in {rm I!R}^n" style="vertical-align: -1px" />, <img class="eq" src="eqs/1188365746961071671-130.png" alt="v^t in {rm I!R}^m" style="vertical-align: -1px" />, indexed by <img class="eq" src="eqs/4718066532391173994-130.png" alt="t in {0,1,2,dots }" style="vertical-align: -5px" /> by iteratively applying <img class="eq" src="eqs/8320025024-130.png" alt="A" style="vertical-align: -0px" /> or <img class="eq" src="eqs/593367982112446592-130.png" alt="A^T" style="vertical-align: -0px" />, and suitable non-linear functions, which depend on the specific application. Special instances of this approach have been developed &ndash;among other applications&ndash; for compressed sensing reconstruction, robust regression, Bayesian estimation, low-rank matrix recovery, phase retrieval, and community detection in graphs. For certain classes of random matrices <img class="eq" src="eqs/8320025024-130.png" alt="A" style="vertical-align: -0px" />, AMP admits an asymptotically exact description in the high-dimensional limit <img class="eq" src="eqs/3244372985665555957-130.png" alt="m,nto infty" style="vertical-align: -4px" />, which goes under the name of &lsquo;state evolution.&rsquo;
+Earlier work established state evolution for separable non-linearities (under certain regularity conditions). Nevertheless, empirical work demonstrated several important applications that require non-separable functions. In this paper we generalize state evolution to Lipschitz continuous non-separable nonlinearities, for Gaussian matrices <img class="eq" src="eqs/8320025024-130.png" alt="A" style="vertical-align: -0px" />. Our proof makes use of Bolthausen's conditioning technique along with several approximation arguments. In particular, we introduce a modified algorithm (called LAMP for Long AMP) which is of independent interest. 
+</div></p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2020-06-16 11:22:34 CEST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $(".toggle-trigger").click(function() {
+        $(this).parent().nextAll('.toggle-wrap').first().slideToggle('slow');
+    });
+});
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128753599-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());

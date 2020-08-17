@@ -1,0 +1,9 @@
+All infos are here
+http://jemdoc.jaboc.net/index.html
+
+To compile the html file, one must run 
+jemdoc -c abstract.panel index.jemdoc
+
+To use github pages, an easy tutorial 
+https://learntocodewith.me/tutorials/github-pages/
+that also tells you how to make changes.

@@ -1,0 +1,40 @@
+# jemdoc: menu{./MENU}{index.html}
+# addjs{./jquery}
+= Ruben Ohana
+
+~~~
+{}{img_left}{photo1.jpg}{}{170px}{}{}
+
+== Briefly
+I am a first-year Ph.D. student under the supervision of [https://florentkrzakala.com/ Florent Krzakala] (LPENS), [https://www.di.ens.fr/~rudi/ Alessandro Rudi](INRIA - DIENS) and [https://scholar.google.fr/citations?user=PCIAcfUAAAAJ&hl=en Laurent Daudet]. I do research in Machine Learning at the Ecole Normale Supérieure in Paris and in collaboration with the startup [https://lighton.ai/ LightOn]. 
+
+My research interest focus on kernels methods, statistics, random matrices and deep learning. More precisely, my current work focuses on using Random Features to approximate kernel methods and to study deep learning frameworks such as Reservoir Computing. 
+Before my starting my Ph.D., I graduated in Physics from [https://www.espci.psl.eu/en/ ESPCI Paris], in Condensed Matter/Quantum Physics from the Master ICFP at [https://www.ens.psl.eu Ecole Normale Supérieure] and in Statistics/Machine Learning from the Master in Mathematics at [https://www.sorbonne-universite.fr/en/university Sorbonne University].
+I did an internship at [http://www.brl.ntt.co.jp/E/ NTT Basic Research Laboratory] in Japan, where I worked on the Quantum spin Hall Effect in InAS/GaSb double quantum wells, experimentally and theoretically under the supervision of [http://www.brl.ntt.co.jp/people/irie.hiroshi/ Hiroshi Irie]. I also did my first master thesis at the [https://www.ligo.caltech.edu/ LIGO] (the gravitational wave observatory), at the [https://www.mit.edu/ Massachussetts Institute of Technology], where I studied the next generation of lasers that will be integrated in the next updatte of the interferometer. I did my second master thesis at the [http://www.quantuminfolip6.fr/ Quantum Information Group] at the [https://www.lip6.fr/?LANG=en LIP6] at Sorbonne University. 
+
+
+Here is a short [cv_english.pdf CV].
+
+== Contact
+
+- E-mail: ruben \[dot\] ohana \[at\] phys \[dot\] ens [dot\] fr \n\
+- Physical address: Laboratoire de Physique de l'Ecole Normale Supérieure [https://www.google.com/maps/place/24+Rue+Lhomond,+75005+Paris/data=!4m2!3m1!1s0x47e671e905a58849:0x6c1d0dc24c54a979?sa=X&ved=2ahUKEwiVqMvA86HrAhULzoUKHZCRAA0Q8gEwAHoECAsQAQ   24 rue Lhomond, 75005 Paris].
+
+~~~
+
+== Publications and Preprints
+
+- R. Ohana$^{*}$, J. Dong$^{*}$, M. Rafayelyan, F. Krzakala. *Reservoir Computing meets Recurrent Kernels and Structured Transforms*, 2020, preprint, \n\[[https://arxiv.org/abs/2006.07310 arXiv]\] \<span class=\"toggle-trigger\"\>\[Show Abstract\]\<span\> 
+\<div class=\"toggle-wrap\"\>
+*Abstract:* Reservoir Computing is a class of simple yet efficient Recurrent Neural Networks where internal weights are fixed at random and only a linear output layer is trained. In the large size limit, such random neural networks have a deep connection with kernel methods. Our contributions are threefold: a) We rigorously establish the recurrent kernel limit of Reservoir Computing and prove its convergence. b) We test our models on chaotic time series prediction, a classic but challenging benchmark in Reservoir Computing, and show how the Recurrent Kernel is competitive and computationally efficient when the number of data points remains moderate. c) When the number of samples is too large, we leverage the success of structured Random Features for kernel approximation by introducing Structured Reservoir Computing. The two proposed methods, Recurrent Kernel and Structured Reservoir Computing, turn out to be much faster and more memory-efficient than conventional Reservoir Computing.
+\<\/div\>
+
+- R. Ohana, J. Wacker, J. Dong, S. Marmin, F. Krzakala, M. Filippone, L. Daudet. *Kernel Computations from large-scale random features obtained by Optical Processing Units*, 2020 ICASSP \n\[[https://ieeexplore.ieee.org/abstract/document/9053272 ICASSP 2020],[https://arxiv.org/abs/1910.09880 arXiv]\]\<span class=\"toggle-trigger\"\>\[Show Abstract\]\<span\> \<div class=\"toggle-wrap\"\>
+*Abstract:* Approximating kernel functions with random features (RFs)has been a successful application of random projections for nonparametric estimation. However, performing random projections presents computational challenges for large-scale problems. Recently, a new optical hardware called Optical Processing Unit (OPU) has been developed for fast and energy-efficient computation of large-scale RFs in the analog domain. More specifically, the OPU performs the multiplication of input vectors by a large random matrix with complex-valued i.i.d. Gaussian entries, followed by the application of an element-wise squared absolute value operation - this last nonlinearity being intrinsic to the sensing process. In this paper, we show that this operation results in a dot-product kernel that has connections to the polynomial kernel, and we extend this computation to arbitrary powers of the feature map. Experiments demonstrate that the OPU kernel and its RF approximation achieve competitive performance in applications using kernel ridge regression and transfer learning for image classification. Crucially, thanks to the use of the OPU, these results are obtained with time and energy savings.
+\<\/div\>
+
+
+- H. Irie, T. Akiho, F. Couedo, R. Ohana, S. Suzuki, H. Onomitsu, K. Muraki. *Impact of epitaxial strain on the topological-nontopological phase diagram and semimetallic behavior of InAs/GaSb composite quantum wells*, 2020, Physical Review B. \n[[https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.075433 PRB],[https://arxiv.org/abs/2002.12503v1 arXiv]\]  \<span class=\"toggle-trigger\"\>\[Show Abstract\]\<span\> 
+\<div class=\"toggle-wrap\"\>
+We study the influence of epitaxial strain on the electronic properties of InAs/GaSb composite quantum wells (CQWs), host structures for quantum spin Hall insulators, by transport measurements and eight-band $k⋅p$ calculations. Using different substrates and buffer layer structures for crystal growth, we prepare two types of samples with vastly different strain conditions. CQWs with a nearly strain-free GaSb layer exhibit a resistance peak at the charge neutrality point that reflects the opening of a topological gap in the band-inverted regime. In contrast, for CQWs with 0.50\% biaxial tensile strain in the GaSb layer, semimetallic behavior indicating a gap closure is found for the same degree of band inversion. Additionally, with the tensile strain, the boundary between the topological and nontopological regimes is located at a larger InAs thickness. Eight-band $k⋅p$ calculations reveal that tensile strain in GaSb not only shifts the phase boundary but also significantly modifies the band structure, which can result in the closure of an indirect gap and make the system semimetallic even in the topological regime. Our results thus provide a global picture of the topological-nontopological phase diagram as a function of layer thicknesses and strain. 
+\<\/div\>
