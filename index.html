@@ -28,14 +28,14 @@ div {
 <img src="photo.jpg" alt="" width="170px" />&nbsp;</td>
 <td align="left"><h2>Briefly</h2>
 
-<p> <div>I am a second-year Ph.D. student (started Dec. 2019) under the supervision of <a href="https://florentkrzakala.com/"> Florent Krzakala</a> (LPENS),<a href="https://www.di.ens.fr/~rudi/"> Alessandro Rudi</a> (INRIA - DIENS, Sierra Team) and  <a href="https://scholar.google.fr/citations?user=PCIAcfUAAAAJ&hl=en">Laurent Daudet</a> (LightOn). I do research in Machine Learning at the Ecole Normale Supérieure in Paris and in collaboration with the startup <a href="https://lighton.ai/" > LightOn</a>.
-<p>My research interest focus on kernels methods, statistics, random matrices and deep learning. More precisely, my current work focuses on using Random Features to approximate kernel methods and to study deep learning frameworks such as Reservoir Computing. I am also looking for new machine learning applications of the <a href="https://lighton.ai/our-technology/" > Optical Processing Unit </a> developed by LightOn.
+<p> <div>I am a second-year Ph.D. student under the supervision of <a href="https://florentkrzakala.com/"> Florent Krzakala</a> (EPFL, formerly at LPENS),<a href="https://www.di.ens.fr/~rudi/"> Alessandro Rudi</a> (INRIA - DIENS, Sierra Team) and  <a href="https://scholar.google.fr/citations?user=PCIAcfUAAAAJ&hl=en">Laurent Daudet</a> (LightOn). I do research in Machine Learning at the Ecole Normale Supérieure in Paris and in collaboration with the startup <a href="https://lighton.ai/" > LightOn</a>.
+<p>My research interests focus on random features for kernel approximation, random matrices and deep learning (alternative training methods). More precisely, my current work focuses on using Random Features to approximate kernel methods and to study deep learning frameworks such as Reservoir Computing <b>(accepted as Oral @ NeurIPS 2020)</b>. I am also looking for new machine learning applications of the <a href="https://lighton.ai/our-technology/" > Optical Processing Unit </a> developed by LightOn such as kernel approximation or as an adversarial defense.
 <p>Before starting my Ph.D., I graduated with an engineering degree in Physics from <a href="https://www.espci.psl.eu/en/"> ESPCI Paris</a>, an MSc in Condensed Matter from the  <a href="https://www.phys.ens.fr/spip.php?rubrique284&lang=en"> Master ICFP</a> at the <a href="https://www.ens.psl.eu "> Ecole Normale Supérieure</a> and an MSc in Statistics/Machine Learning from the Master in Mathematics at <a href="https://www.sorbonne-universite.fr/en/university"> Sorbonne University</a>.
-I did an internship at <a href="http://www.brl.ntt.co.jp/E/">NTT Basic Research Laboratory</a> in Japan, where I worked on the Quantum spin Hall Effect in InAS/GaSb double quantum wells, experimentally and theoretically under the supervision of <a href="http://www.brl.ntt.co.jp/people/irie.hiroshi/">Irie Hiroshi</a>. I also did my first master thesis at the <a href="https://www.ligo.caltech.edu/"> LIGO</a> (the gravitational wave observatory), at the <a href="https://www.mit.edu/">Massachussetts Institute of Technology</a>, where I studied the next generation of lasers that will be integrated in the next update of the interferometer. I did my second master thesis at the <a href="http://www.quantuminfolip6.fr/">Quantum Information Group</a> at the <a href="https://www.lip6.fr/?LANG=en LIP6"> LIP6</a> at Sorbonne University where I studied Contextuality in quantum information networks.  	</div>
+I did an internship at <a href="http://www.brl.ntt.co.jp/E/">NTT Basic Research Laboratory</a> in Japan, where I worked on the Quantum spin Hall Effect in InAS/GaSb double quantum wells, experimentally and theoretically under the supervision of <a href="http://www.brl.ntt.co.jp/people/irie.hiroshi/">Irie Hiroshi</a>. I also did my first master thesis at the <a href="https://www.ligo.caltech.edu/"> LIGO</a> (the gravitational wave observatory), at the <a href="https://www.mit.edu/">Massachussetts Institute of Technology</a>, where I studied the next generation of lasers that will be integrated in the next update of the interferometer, under the supervision of <a href="https://space.mit.edu/people/fritschel-peter-k/">Peter Fritschel</a>. I did my second master thesis at the <a href="http://www.quantuminfolip6.fr/">Quantum Information Group</a> at the <a href="https://www.lip6.fr/?LANG=en LIP6"> LIP6</a> at Sorbonne University where I studied Contextuality in quantum information networks, under the supervision of <a href="https://damianmarkham.weebly.com/">Damian Markham</a>.  	</div>
 
 <a href=""></a>
 
-<p>Here is a short <a href="cv_english.pdf">CV</a>.</p>
+<p>Here is a short (almost updated) <a href="cv_english.pdf">CV</a>.</p>
 <h2>Contact</h2>
 <ul>
 <li><p>E-mail: ruben [dot] ohana [at] phys [dot] ens [dot] fr <br />
@@ -45,27 +45,39 @@ I did an internship at <a href="http://www.brl.ntt.co.jp/E/">NTT Basic Research 
 </ul>
 </td></tr></table>
 <h2>Publications and Preprints</h2>
+
 <ul>
-<li><p>A. Sohbi, <b> R. Ohana</b>, I. Zaquine, E. Diamanti, D. Markham  <b>Experimental Approach to Demonstrating Contextuality for Qudits, </b> 2020, under review. <br />[<a href="https://arxiv.org/abs/2010.13278">arXiv</a>] <span class="toggle-trigger">[Show Abstract]<span> 
+<li><p>M. Refinetti<sup>*</sup>, S. d'Asoli<sup>*</sup>, <b> R. Ohana</b>, S. Goldt. <b>The dynamics of learning with feedback alignment, </b> 2020, preprint. <br />[<a href="https://arxiv.org/abs/2011.12428">arXiv</a>, <a href="https://github.com/sdascoli/dfa-landscape">Github</a>] <span class="toggle-trigger">[Show Abstract]<span> 
+<div class="toggle-wrap">
+<b>Abstract:</b> Direct Feedback Alignment (DFA) is emerging as an efficient and biologically plausible alternative to the ubiquitous backpropagation algorithm for training deep neural networks. Despite relying on random feedback weights for the backward pass, DFA successfully trains state-of-the-art models such as Transformers. On the other hand, it notoriously fails to train convolutional networks. An understanding of the inner workings of DFA to explain these diverging results remains elusive. Here, we propose a theory for the success of DFA. We first show that learning in shallow networks proceeds in two steps: an alignment phase, where the model adapts its weights to align the approximate gradient with the true gradient of the loss function, is followed by a memorisation phase, where the model focuses on fitting the data. This two-step process has a degeneracy breaking effect: out of all the low-loss solutions in the landscape, a network trained with DFA naturally converges to the solution which maximises gradient alignment. We also identify a key quantity underlying alignment in deep linear networks: the conditioning of the alignment matrices. The latter enables a detailed understanding of the impact of data structure on alignment, and suggests a simple explanation for the well-known failure of DFA to train convolutional neural networks. Numerical experiments on MNIST and CIFAR10 clearly demonstrate degeneracy breaking in deep non-linear networks and show that the align-then-memorize process occurs sequentially from the bottom layers of the network to the top. 
+</div></p>
+</li>
+</ul>
+
+<ul>
+<li><p>A. Sohbi, <b> R. Ohana</b>, I. Zaquine, E. Diamanti, D. Markham.  <b>Experimental Approach to Demonstrating Contextuality for Qudits, </b> 2020, under review. <br />[<a href="https://arxiv.org/abs/2010.13278">arXiv</a>] <span class="toggle-trigger">[Show Abstract]<span> 
 <div class="toggle-wrap">
 <b>Abstract:</b> We propose a method to experimentally demonstrate contextuality with a family of tests for qudits. The experiment we propose uses a qudit encoded in the path of a single photon and its temporal degrees of freedom. We consider the impact of noise on the effectiveness of these tests, taking the approach of ontologically faithful non-contextuality. In this approach, imperfections in the experimental set up must be taken into account in any faithful ontological (classical) model, which limits how much the statistics can deviate within different contexts. In this way we bound the precision of the experimental setup under which ontologically faithful non-contextual models can be refuted. We further consider the noise tolerance through different types of decoherence models on different types of encodings of qudits. We quantify the effect of the decoherence on the required precision for the experimental setup in order to demonstrate contextuality in this broader sense.  
 </div></p>
 </li>
 </ul>
+
 <ul>
-<li><p><b>R. Ohana<sup>*</sup></b>,J. Dong<sup>*</sup>, M. Rafayelyan, F. Krzakala.  <b>Reservoir Computing meets Recurrent Kernels and Structured Transforms, </b> 2020, NeurIPS 2020 (<b>Oral</b>). <br />[<a href="https://papers.nips.cc/paper/2020/file/c348616cd8a86ee661c7c98800678fad-Paper.pdf" >NeurIPS</a>, <a href="https://arxiv.org/abs/2006.07310">arXiv</a>, <a href="https://github.com/rubenohana/Reservoir-computing-kernels">Github</a>, <a href="https://twitter.com/oharub/status/1319634001330667521"> Twitter thread </a> ] <span class="toggle-trigger">[Show Abstract]<span> 
+<li><p><b>R. Ohana<sup>*</sup></b>, J. Dong<sup>*</sup>, M. Rafayelyan, F. Krzakala.  <b>Reservoir Computing meets Recurrent Kernels and Structured Transforms, </b> <i>Advances in Neural Information Processing Systems 33</i> (NeurIPS 2020) (<b>Oral</b>). <br />[<a href="https://papers.nips.cc/paper/2020/file/c348616cd8a86ee661c7c98800678fad-Paper.pdf" >NeurIPS</a>, <a href="https://arxiv.org/abs/2006.07310">arXiv</a>, <a href="https://github.com/rubenohana/Reservoir-computing-kernels">Github</a>, <a href="https://twitter.com/oharub/status/1319634001330667521"> Twitter thread </a> ] <span class="toggle-trigger">[Show Abstract]<span> 
 <div class="toggle-wrap">
 <b>Abstract:</b> Reservoir Computing is a class of simple yet efficient Recurrent Neural Networks where internal weights are fixed at random and only a linear output layer is trained. In the large size limit, such random neural networks have a deep connection with kernel methods. Our contributions are threefold: a) We rigorously establish the recurrent kernel limit of Reservoir Computing and prove its convergence. b) We test our models on chaotic time series prediction, a classic but challenging benchmark in Reservoir Computing, and show how the Recurrent Kernel is competitive and computationally efficient when the number of data points remains moderate. c) When the number of samples is too large, we leverage the success of structured Random Features for kernel approximation by introducing Structured Reservoir Computing. The two proposed methods, Recurrent Kernel and Structured Reservoir Computing, turn out to be much faster and more memory-efficient than conventional Reservoir Computing. 
 </div></p>
 </li>
 </ul>
+
 <ul>
-<li><p><b>R. Ohana</b>, J. Wacker, J. Dong, S. Marmin, F. Krzakala, M. Filippone, L. Daudet. <b>Kernel Computations from large-scale random features obtained by Optical Processing Units</b>, 2020, <i> International Conference on Acoustics, Speech, and Signal Processing (ICASSP) </i>. <br />[<a href="https://ieeexplore.ieee.org/abstract/document/9053272">ICASSP 2020</a>,  <a href="https://arxiv.org/abs/1910.09880">arXiv</a>, <a href="https://github.com/joneswack/opu-kernel-experiments"> Github </a>] <span class="toggle-trigger">[Show Abstract]<span> 
+<li><p><b>R. Ohana</b>, J. Wacker, J. Dong, S. Marmin, F. Krzakala, M. Filippone, L. Daudet. <b>Kernel Computations from large-scale random features obtained by Optical Processing Units</b>, <i> International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2020) </i>. <br />[<a href="https://ieeexplore.ieee.org/abstract/document/9053272">ICASSP</a>,  <a href="https://arxiv.org/abs/1910.09880">arXiv</a>, <a href="https://github.com/joneswack/opu-kernel-experiments"> Github </a>] <span class="toggle-trigger">[Show Abstract]<span> 
 <div class="toggle-wrap">
 <b>Abstract:</b> Approximating kernel functions with random features (RFs) has been a successful application of random projections for nonparametric estimation. However, performing random projections presents computational challenges for large-scale problems. Recently, a new optical hardware called Optical Processing Unit (OPU) has been developed for fast and energy-efficient computation of large-scale RFs in the analog domain. More specifically, the OPU performs the multiplication of input vectors by a large random matrix with complex-valued i.i.d. Gaussian entries, followed by the application of an element-wise squared absolute value operation - this last nonlinearity being intrinsic to the sensing process. In this paper, we show that this operation results in a dot-product kernel that has connections to the polynomial kernel, and we extend this computation to arbitrary powers of the feature map. Experiments demonstrate that the OPU kernel and its RF approximation achieve competitive performance in applications using kernel ridge regression and transfer learning for image classification. Crucially, thanks to the use of the OPU, these results are obtained with time and energy savings. 
 </div></p>
 </li>
 </ul>
+
 <ul>
 <li><p>H. Irie, T. Akiho, F. Couedo, <b>R. Ohana</b>, S. Suzuki, H. Onomitsu, K. Muraki. <b>Impact of epitaxial strain on the topological-nontopological phase diagram and semimetallic behavior of InAs/GaSb composite quantum wells</b>, 2020, <i>Physical Review B. </i> <br />[<a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.075433">Phys. Rev. B</a>, <a href="https://arxiv.org/abs/2002.12503v1">arXiv</a>] <span class="toggle-trigger">[Show Abstract]<span> 
 <div class="toggle-wrap">
@@ -73,9 +85,10 @@ I did an internship at <a href="http://www.brl.ntt.co.jp/E/">NTT Basic Research 
 </div></p>
 </li>
 </ul>
+
 <div id="footer">
 <div id="footer-text">
-Page generated 2020-06-16 11:22:34 CEST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page updated on the 26th of November 2020</a>.
 </div>
 </div>
 </td>
