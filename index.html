@@ -32,8 +32,8 @@ div {
 </div>
 <table class="imgtable"><tr><td>
 <img src="Headshot.jpeg" alt="" width="250px" />&nbsp;</td>
-<td align="left"><h2>Briefly</h2>
-    <p>I am currently a  Research Fellow at the <a href = "https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/"> Center for Computational Mathematics</a> of the Flatiron Institute (Simons Foundation) in New York City. My current research interests are optimization of large deep learning models (i.e. transformers), optimal transport and machine learning for solving scientific problems. </p>
+<td align="left"><h2>Biography</h2>
+    <p>I am currently a  Research Fellow at the <a href = "https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/"> Center for Computational Mathematics</a> of the Flatiron Institute (Simons Foundation) in New York City. My current research interests are optimization of large deep learning models (i.e. transformers and diffusion models), optimal transport and machine learning for solving scientific problems. I am part of the <a href="https://polymathic-ai.org/">Polymathic AI</a> initiative, aiming at building foundation models for science. </p>
 <p> <div>In 2022, I obtained my PhD in machine learning  from <a href="https://www.ens.psl.eu "> Ecole Normale Supérieure</a> supervised by <a href="https://florentkrzakala.com/"> Florent Krzakala</a> (EPFL, formerly at ENS),<a href="https://www.di.ens.fr/~rudi/"> Alessandro Rudi</a> (INRIA - DIENS, Sierra Team) and  <a href="https://scholar.google.fr/citations?user=PCIAcfUAAAAJ&hl=en">Laurent Daudet</a> (LightOn). In parallel to my PhD, I was a research scientist at the startup <a href="https://lighton.ai/" > LightOn</a>.
 <p>My PhD research interests focused on random features for kernel approximation, high-dimensional probabilities, random matrices and alternative training methods for deep learning, with application in differential privacy and adversarial robustness. I was also looking for new machine learning applications of the  Optical Processing Units developed by LightOn. 
 <p>During my PhD, I did a 4 months PhD internship at the <a href ="https://ailab.criteo.com/">Criteo AI Lab</a> under the supervision of <a href="https://pageperso.lis-lab.fr/~liva.ralaivola/doku.php"> Liva Ralaivola</a> and <a href = "https://scholar.google.fr/citations?user=INHspc0AAAAJ&hl=en"> Alain Rakotomamonjy</a> where we worked on building a PAC-Bayesian framework for Sliced-Wasserstein distances.</p>
@@ -52,9 +52,49 @@ div {
 <h2>Publications and Preprints</h2>
 
 <ul>
+  <li><p><i>Removing Dust from CMB Observations with Diffusion Models. </i> D. Heurtel-Depeiges, B. Burkhart, <b>R. Ohana<sup>*</sup>,</b> B. Régaldo-Saint Blancard<sup>*</sup>. <i style="color:green;"> NeurIPS, ML and the Physical Sciences Workshop 2023.</i> [<a href="https://arxiv.org/abs/2310.16285">arXiv</a>] <span class="toggle-trigger">[Show Abstract]<span>
+  <div class="toggle-wrap">
+  <b>Abstract:</b> In cosmology, the quest for primordial B-modes in cosmic microwave background (CMB) observations has highlighted the critical need for a refined model of the Galactic dust foreground. We investigate diffusion-based modeling of the dust foreground and its interest for component separation. Under the assumption of a Gaussian CMB with known cosmology (or covariance matrix), we show that diffusion models can be trained on examples of dust emission maps such that their sampling process directly coincides with posterior sampling in the context of component separation. We illustrate this on simulated mixtures of dust emission and CMB. We show that common summary statistics (power spectrum, Minkowski functionals) of the components are well recovered by this process. We also introduce a model conditioned by the CMB cosmology that outperforms models trained using a single cosmology on component separation. Such a model will be used in future work for diffusion-based cosmological inference. </div></p>
+  </li>
+  </ul>
+
+<ul>
+  <li><p><i>xVal: A Continuous Number Encoding for Large Language Models. </i> <b>Polymathic AI.</b> <i style="color:green;"> NeurIPS, AI4Science Workshop 2023.</i> [<a href="https://arxiv.org/abs/2310.02989">arXiv</a>] <span class="toggle-trigger">[Show Abstract]<span>
+  <div class="toggle-wrap">
+  <b>Abstract:</b> Large Language Models have not yet been broadly adapted for the analysis of scientific datasets due in part to the unique difficulties of tokenizing numbers. We propose xVal, a numerical encoding scheme that represents any real number using just a single token. xVal represents a given real number by scaling a dedicated embedding vector by the number value. Combined with a modified number-inference approach, this strategy renders the model end-to-end continuous when considered as a map from the numbers of the input string to those of the output string. This leads to an inductive bias that is generally more suitable for applications in scientific domains. We empirically evaluate our proposal on a number of synthetic and real-world datasets. Compared with existing number encoding schemes, we find that xVal is more token-efficient and demonstrates improved generalization.  </div></p>
+  </li>
+  </ul>
+
+<ul>
+  <li><p><i>Multiple Physics Pretraining for Physical Surrogate Models. </i> <b>Polymathic AI.</b> <i style="color:green;"> Oral @ NeurIPS, AI4Science Workshop 2023.</i> [<a href="https://arxiv.org/abs/2310.02994">arXiv</a>] <span class="toggle-trigger">[Show Abstract]<span>
+  <div class="toggle-wrap">
+  <b>Abstract:</b> We introduce multiple physics pretraining (MPP), an autoregressive task-agnostic pretraining approach for physical surrogate modeling. MPP involves training large surrogate models to predict the dynamics of multiple heterogeneous physical systems simultaneously by learning features that are broadly useful across diverse physical tasks. In order to learn effectively in this setting, we introduce a shared embedding and normalization strategy that projects the fields of multiple systems into a single shared embedding space. We validate the efficacy of our approach on both pretraining and downstream tasks over a broad fluid mechanics-oriented benchmark. We show that a single MPP-pretrained transformer is able to match or outperform task-specific baselines on all pretraining sub-tasks without the need for finetuning. For downstream tasks, we demonstrate that finetuning MPP-trained models results in more accurate predictions across multiple time-steps on new physics compared to training from scratch or finetuning pretrained video foundation models. We open-source our code and model weights trained at multiple scales for reproducibility and community experimentation.  </div></p>
+  </li>
+  </ul>
+
+<ul>
+  <li><p><i>AstroCLIP: Cross-Modal Pre-Training for Astronomical Foundation Models. </i> <b>Polymathic AI.</b> <i style="color:green;"> NeurIPS, AI4Science Workshop 2023.</i> [<a href="https://arxiv.org/abs/2310.03024">arXiv</a>] <span class="toggle-trigger">[Show Abstract]<span>
+  <div class="toggle-wrap">
+  <b>Abstract:</b> We present AstroCLIP, a strategy to facilitate the construction of astronomical foundation models that bridge the gap between diverse observational modalities. We demonstrate that a cross-modal contrastive learning approach between images and optical spectra of galaxies yields highly informative embeddings of both modalities. In particular, we apply our method on multi-band images and optical spectra from the Dark Energy Spectroscopic Instrument (DESI), and show that: (1) these embeddings are well-aligned between modalities and can be used for accurate cross-modal searches, and (2) these embeddings encode valuable physical information about the galaxies -- in particular redshift and stellar mass -- that can be used to achieve competitive zero- and few- shot predictions without further finetuning. Additionally, in the process of developing our approach, we also construct a novel, transformer-based model and pretraining approach for processing galaxy spectra. </div></p>
+  </li>
+  </ul>
+<ul>
+<li><p><i>MoMo: Momentum Models for Adaptive Learning Rates. </i> F. Schaipp, <b>R. Ohana</b>, M. Eickenberg, A. Defazio, R. M. Gower. [<a href="https://arxiv.org/abs/2305.07583">arXiv</a>] <span class="toggle-trigger">[Show Abstract]<span>
+<div class="toggle-wrap">
+<b>Abstract:</b> Training a modern machine learning architecture on a new task requires extensive learning-rate tuning, which comes at a high computational cost. Here we develop new adaptive learning rates that can be used with any momentum method, and require less tuning to perform well. We first develop MoMo, a Momentum Model based adaptive learning rate for SGD-M (Stochastic gradient descent with momentum). MoMo uses momentum estimates of the batch losses and gradients sampled at each iteration to build a model of the loss function. Our model also makes use of any known lower bound of the loss function by using truncation, e.g. most losses are lower-bounded by zero. We then approximately minimize this model at each iteration to compute the next step. We show how MoMo can be used in combination with any momentum-based method, and showcase this by developing MoMo-Adam - which is Adam with our new model-based adaptive learning rate. Additionally, for losses with unknown lower bounds, we develop on-the-fly estimates of a lower bound, that are incorporated in our model. Through extensive numerical experiments, we demonstrate that MoMo and MoMo-Adam improve over SGD-M and Adam in terms of accuracy and robustness to hyperparameter tuning for training image classifiers on MNIST, CIFAR10, CIFAR100, Imagenet, recommender systems on the Criteo dataset, and a transformer model on the translation task IWSLT14.  </div></p>
+</li>
+</ul>
+<ul>
 <li><p><i>Shedding a PAC-Bayesian Light on Adaptive Sliced-Wasserstein Distances. </i> <b>R. Ohana<sup>*</sup></b>, K. Nadjahi<sup>*</sup>, A. Rakotomamonjy, L. Ralaivola. <i style="color:green;"> ICML 2023.</i> [<a href="https://arxiv.org/abs/2206.03230">arXiv</a>] <span class="toggle-trigger">[Show Abstract]<span>
 <div class="toggle-wrap">
 <b>Abstract:</b> The Sliced-Wasserstein distance (SW) is a computationally efficient and theoretically grounded alternative to the Wasserstein distance. Yet, the literature on its statistical properties with respect to the distribution of slices, beyond the uniform measure, is scarce. To bring new contributions to this line of research, we leverage the PAC-Bayesian theory and the central observation that SW actually hinges on a slice-distribution-dependent Gibbs risk, the kind of quantity PAC-Bayesian bounds have been designed to characterize. We provide four types of results: i) PAC-Bayesian generalization bounds that hold on what we refer as adaptive Sliced-Wasserstein distances, i.e. distances defined with respect to any distribution of slices, ii) a procedure to learn the distribution of slices that yields a maximally discriminative SW, by optimizing our PAC-Bayesian bounds, iii) an insight on how the performance of the so-called distributional Sliced-Wasserstein distance may be explained through our theory, and iv) empirical illustrations of our findings. </div></p>
+</li>
+</ul>
+
+<ul>
+<li><p><i>Linear Optical Random Projections Without Holography. </i> <b>R. Ohana</b>, D. Hesslow, D. Brunner, S. Gigan, K. Müller. <i style="color:green;"> Optics Express.</i> [<a href="https://arxiv.org/abs/2305.12988">arXiv</a>] <span class="toggle-trigger">[Show Abstract]<span>
+<div class="toggle-wrap">
+<b>Abstract:</b> We introduce a novel method to perform linear optical random projections without the need for holography. Our method consists of a computationally trivial combination of multiple intensity measurements to mitigate the information loss usually associated with the absolute-square non-linearity imposed by optical intensity measurements. Both experimental and numerical findings demonstrate that the resulting matrix consists of real-valued, independent, and identically distributed (i.i.d.) Gaussian random entries. Our optical setup is simple and robust, as it does not require interference between two beams. We demonstrate the practical applicability of our method by performing dimensionality reduction on high-dimensional data, a common task in randomized numerical linear algebra with relevant applications in machine learning.  </div></p>
 </li>
 </ul>
 
@@ -155,12 +195,12 @@ div {
     <h2>Miscellaneous</h2>
     <ul><li>Reviewer for ALT 2020, NeurIPS 2021-2022, ICML 2022-2023, WACV 2022, Nature Communications, Journal of Machine Learning Research (JMLR). </li>
 
-    <li>Oral at NeurIPS 2020, Paris Machine learning meetup 2020, Roscoff meeting 2019, invited speaker at Dauphine university, Golosino meetings at ENS 2019-2020, invited speaker at Criteo, organised an internal workshop on building GPT models from scratch at the Flatiron Institute.</li>
+    <li>Oral at NeurIPS 2020, Paris Machine learning meetup 2020, Roscoff meeting 2019, invited speaker at Dauphine university, Golosino meetings at ENS 2019-2020, invited speaker at Criteo, organised an internal workshop on building GPT models from scratch at the Flatiron Institute. Talk at Supercomputing 23.</li>
     </ul>
 
 <div id="footer">
 <div id="footer-text">
-Page updated on May 15, 2023</a>.
+Page updated on Nov 16, 2023</a>.
 </div>
 </div>
 </td>
