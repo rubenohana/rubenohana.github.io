@@ -288,6 +288,7 @@ h1 {
 h2 {
   font-size: 1.5em;
   line-height: 1.5em;
+  margin-top: 0.8em;
 }
 
 h3 {
@@ -2327,8 +2328,8 @@ input[type=button]:disabled,
   margin: 0;
 }
 #header .image.avatar {
-  margin: 0 0 1em 0;
-  width: 8.25em;
+  margin: auto auto -1em auto;
+  width: 16em;
 }
 #header #nav {
   -moz-flex-grow: 1;
@@ -2891,7 +2892,7 @@ article.special {
 
   header.major h2 {
     font-size: 1.35em;
-    margin-top: 1.5em;
+    margin-top: 3em;
   }
 
   /* List */
