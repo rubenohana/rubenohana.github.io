@@ -1801,10 +1801,14 @@ input[type=radio] + label:before {
   width: 100%;
 }
 .image.logo {
-  margin: 1em 0 0 0;
+  margin: 1em 0 0 2em;
   width: 15em;
   display: inline-block;
   position: relative;
+}
+.image.logo img {
+  width: 100%;
+  height: auto;
 }
 .image.logo:before {
   background: none;
@@ -2279,7 +2283,7 @@ input[type=button]:disabled,
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-  background-color: #537eba;
+  background-color: #FAF0E6;
   background-attachment: scroll, scroll;
   background-position: top left, top left;
   background-repeat: repeat, no-repeat;
@@ -2354,21 +2358,21 @@ input[type=button]:disabled,
   -ms-transition: none;
   transition: none;
   border: 0;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0, 0.4);
   display: block;
   text-decoration: none;
   font-size: 1.5em;
   line-height: 2;
 }
 #header #nav > ul li a.active {
-  color: #fff;
+  color: #000;
   -moz-transition: all 250ms ease-out;
   -webkit-transition: all 250ms ease-out;
   -ms-transition: all 250ms ease-out;
   transition: all 250ms ease-out;
 }
 #header #nav > ul li a:hover {
-  color: #fff;
+  color: #000;
   -moz-transition: all 250ms ease-out;
   -webkit-transition: all 250ms ease-out;
   -ms-transition: all 250ms ease-out;
@@ -2395,6 +2399,7 @@ input[type=button]:disabled,
   margin-top: 0;
   padding-top: 0;
 }
+
 
 /* Poptrox */
 @-moz-keyframes spin {
@@ -2746,6 +2751,11 @@ h6 br {
     width: 100%;
   }
 
+  #footer .inner {
+    text-align: right;
+    padding-right: 2em;
+  }
+
   /* Main */
   #main {
     margin: 0;
@@ -2769,12 +2779,12 @@ h6 br {
     top: 0;
     width: 100%;
     z-index: 10001;
-    background: #537eba;
-    color: #fff;
+    background: #FAF0E6;
+    color: #000;
     min-width: 320px;
   }
   #titleBar .title {
-    color: #fff;
+    color: #000;
     display: flex;
     font-weight: 300;
     height: 55px;
@@ -2822,8 +2832,8 @@ h6 br {
   }
   #titleBar .toggle:before {
     text-decoration: none;
-    background: #537eba;
-    color: #ffffff;
+    background: #FAF0E6;
+    color: #000000;
     content: "\f0c9";
     display: block;
     font-size: 18px;
@@ -2942,3 +2952,46 @@ article.special {
 }
 
 /*# sourceMappingURL=ccm.css.map */
+
+/* Force override mobile navigation colors */
+#titleBar {
+  background: #FAF0E6 !important;
+  color: #000 !important;
+}
+
+#titleBar .title {
+  color: #000 !important;
+}
+
+#titleBar .toggle:before {
+  background: #FAF0E6 !important;
+  color: #000 !important;
+}
+
+/* Align NVIDIA logo with profile picture */
+#footer {
+  background-attachment: scroll;
+  background-position: top left, bottom center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  bottom: auto;
+  left: auto;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 35%;  /* Match header width */
+  margin-left: 0;
+}
+
+#footer .inner {
+  text-align: center !important;
+  padding-right: 0em !important;
+}
+
+.image.logo {
+  margin: 1em auto 0 auto !important;  /* Center like avatar */
+  width: 15em;
+  display: block !important;
+  position: relative;
+  float: none !important;
+}
